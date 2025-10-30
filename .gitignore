@@ -1,0 +1,24 @@
+# FAISS vector store (generated at runtime)
+faiss_store_hf.pkl
+faiss_store_openai.pkl
+*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
