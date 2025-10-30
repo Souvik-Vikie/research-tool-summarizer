@@ -18,12 +18,7 @@ This is a user-friendly news research tool designed for effortless information r
 ```bash
   git clone https://github.com/Souvik-Vikie/research-tool-summarizer
 ```
-2.Navigate to the project directory:
-
-```bash
-  cd 2_news_research_tool_project
-```
-3. Install the required dependencies using pip:
+1. Install the required dependencies using pip:
 
 ```bash
   pip install -r requirements.txt
