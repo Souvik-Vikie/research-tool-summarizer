@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.title("Research Summarizer and Question Answering Tool 📈")
-st.sidebar.title("News Article URLs")
+st.sidebar.title("Article URLs")
 
 # Initialize Hugging Face models
 @st.cache_resource
