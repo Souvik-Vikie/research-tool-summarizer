@@ -16,7 +16,7 @@ This is a user-friendly news research tool designed for effortless information r
 1.Clone this repository to your local machine using:
 
 ```bash
-  git clone https://github.com/codebasics/langchain.git
+  git clone https://github.com/Souvik-Vikie/research-tool-summarizer
 ```
 2.Navigate to the project directory:
 
