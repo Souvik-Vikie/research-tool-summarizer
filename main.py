@@ -16,7 +16,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 from dotenv import load_dotenv
 load_dotenv()
 
-st.title("RockyBot: News Research Tool 📈")
+st.title("Research Summarizer and Question Answering Tool 📈")
 st.sidebar.title("News Article URLs")
 
 # Initialize Hugging Face models
