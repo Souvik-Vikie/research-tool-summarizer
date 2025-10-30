@@ -9,8 +9,8 @@ RockyBot is a user-friendly news research tool designed for effortless informati
 
 - Load URLs or upload text files containing URLs to fetch article content.
 - Process article content through LangChain's UnstructuredURL Loader
-- Construct an embedding vector using OpenAI's embeddings and leverage FAISS, a powerful similarity search library, to enable swift and effective retrieval of relevant information
-- Interact with the LLM's (Chatgpt) by inputting queries and receiving answers along with source URLs.
+- Construct an embedding vector using Hugging Face's sentence-transformers and leverage FAISS, a powerful similarity search library, to enable swift and effective retrieval of relevant information
+- Interact with the LLM (FLAN-T5) by inputting queries and receiving answers along with source URLs.
 
 
 ## Installation
@@ -30,11 +30,7 @@ RockyBot is a user-friendly news research tool designed for effortless informati
 ```bash
   pip install -r requirements.txt
 ```
-4.Set up your OpenAI API key by creating a .env file in the project root and adding your API
-
-```bash
-  OPENAI_API_KEY=your_api_key_here
-```
+4. No API key setup required! This project uses free Hugging Face models.
 ## Usage/Examples
 
 1. Run the Streamlit app by executing:
@@ -51,10 +47,10 @@ streamlit run main.py
 
 - Observe the system as it performs text splitting, generates embedding vectors, and efficiently indexes them using FAISS.
 
-- The embeddings will be stored and indexed using FAISS, enhancing retrieval speed.
+- The embeddings will be generated using Hugging Face's sentence-transformers model and stored using FAISS, enhancing retrieval speed.
 
 - The FAISS index will be saved in a local file path in pickle format for future use.
-- One can now ask a question and get the answer based on those news articles
+- Ask questions and get answers from the FLAN-T5 model based on those news articles
 - In video tutorial, we used following news articles
   - https://www.moneycontrol.com/news/business/tata-motors-mahindra-gain-certificates-for-production-linked-payouts-11281691.html
   - https://www.moneycontrol.com/news/business/tata-motors-launches-punch-icng-price-starts-at-rs-7-1-lakh-11098751.html
@@ -64,5 +60,4 @@ streamlit run main.py
 
 - main.py: The main Streamlit application script.
 - requirements.txt: A list of required Python packages for the project.
-- faiss_store_openai.pkl: A pickle file to store the FAISS index.
-- .env: Configuration file for storing your OpenAI API key.
+- vector_index_hf.pkl: A pickle file to store the FAISS index.
