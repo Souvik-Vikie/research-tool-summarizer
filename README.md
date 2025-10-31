@@ -44,7 +44,7 @@ streamlit run main.py
 
 - The FAISS index will be saved in a local file path in pickle format for future use.
 - Ask questions and get answers from the FLAN-T5 model based on those news articles
-- In video tutorial, we used following news articles
+- We used following news articles
   - https://techcrunch.com/2025/10/29/and-the-winner-of-startup-battlefield-at-disrupt-2025-is-glid/
   - https://www.bbc.com/news/topics/c2vdnvdg6xxt
   - https://www.bbc.com/news/war-in-ukrainebuy-tata-motors-target-of-rs-743-kr-choksey-11080811.html
